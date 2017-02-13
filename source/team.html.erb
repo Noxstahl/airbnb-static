@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-3">
+      <ul class="list-inline text-center">
+        <% ["hugo", "seb", "romain"].each do |member| %>
+          <li>
+            <%= image_tag "#{member}.jpg", class: "img-circle img-size" %>
+            <h3><%= member.capitalize %></h3>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
